@@ -1,0 +1,214 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+
+ @import url(./font/css/fontello.css);
+
+ *{
+ 	margin: 0;
+ 	padding: 0;
+ }
+
+ html{
+ 	overflow: hidden;
+ }
+
+ body{
+ 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+ 	background-color: #000;
+ }
+
+
+/**
+******************* Navigation ******************
+**/
+
+#topNav{
+	position: absolute;
+	width: 100%;
+	height: 64px;
+	background-image: url('../img/bg-top-menu-bar.jpg');
+	background-size: 20px 64px;
+	z-index: 5000;
+	-webkit-box-shadow:  0px 1px 3px 0px rgba(0, 0, 0, 1);
+    box-shadow:  0px 1px 3px 0px rgba(0, 0, 0, 1);
+}
+
+.button-top-bar-menu, #areas{
+	float: left;
+}
+
+.button-top-bar-menu{
+	display: block;
+	background-image: url('../img/bg-top-menu-separator.png');
+	background-repeat: no-repeat;
+	background-position-x: right;
+	padding-right: 10px;
+	padding-left: 10px; 
+	font-size: 35px;
+	color: #fff;
+	text-decoration: none;
+	height: 64px;
+	text-align: center;
+	line-height: 64px;
+	vertical-align: middle;
+}
+
+#areas{
+	height: 64px;
+	padding-right: 10px;
+	padding-left: 10px; 
+	font-size: 20px;
+	background: transparent;
+	color: #fff;
+	border: none;
+}
+
+#sideMenu{
+	position: absolute;
+	left: -275px;
+	top: 0;
+	background-color: #383a42;
+	width: 275px;
+	height: 100%;
+}
+
+#sideMenu:before{
+	content: "";
+	-webkit-box-shadow: inset -2px 0px 5px 0px rgba(0,0,0, .4);
+	box-shadow: inset -2px 0px 5px 0px rgba(0,0,0, .4);
+	width: 100%;
+	height: 100%;
+	z-index: 1500;
+	position: absolute;
+}
+
+#sideMenu h1{
+	height: 64px;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#303237), color-stop(100%,#1b1d20)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #303237 0%,#1b1d20 100%); /* Chrome10+,Safari5.1+ */
+	background: linear-gradient(to bottom,  #303237 0%,#1b1d20 100%); /* W3C */
+	color: #fff;
+	line-height: 64px;
+	vertical-align: middle;
+	text-transform: uppercase;
+	font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
+	padding-left: 20px;
+	-wekbit-box-sizing: border-box;
+	-box-sizing: border-box;
+	text-shadow: 0px 2px 1px #000;
+	border-bottom: 1px solid rgba(0,0,0, .5);
+}
+
+#sideMenu li{
+	height:  64px;
+	background-color: #303237;
+	color: #fff;
+	font-weight: lighter;
+	-wekbit-box-sizing: border-box;
+	-box-sizing: border-box;
+	line-height: 64px;
+	vertical-align: middle;
+	background-image: url('../img/icon-solar-sytem.png');
+	background-repeat: no-repeat;
+	background-position-y: center;
+	background-position-x: 20px;
+	background-size: 20px 21px;
+	-wekbit-box-sizing: border-box;
+	-box-sizing: border-box;
+	padding-left: 60px;
+	border-bottom: 1px solid rgba(0,0,0, .5);
+	text-shadow: 0px 1px 1px rgba(0,0,0, .5);
+	-webkit-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255, .1);
+	box-shadow: inset 0px 1px 0px 0px rgba(255,255,255, .1);
+}
+
+#sideMenu li:nth-child(2){
+	background-image: url('../img/icon-galaxy.png');
+}
+
+#sideMenu li:nth-child(3){
+	background-image: url('../img/icon-more-bigger.png');
+}
+
+#sideMenu span{
+	display: inline-block;
+	float: right;
+	text-align: center;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f23008), color-stop(100%,#d22502)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f23008 0%,#d22502 100%); /* Chrome10+,Safari5.1+ */
+	background: linear-gradient(to bottom,  #f23008 0%,#d22502 100%); /* W3C */
+	width: 25px;
+	height: 25px;
+	margin-top: 20px;
+	margin-right: 20px;
+	line-height: 25px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	text-shadow: 0px -1px 0px rgba(0,0,0, 1);
+	-webkit-box-shadow:  0px 1px 1px 0px rgba(0, 0, 0, .4);
+    box-shadow:  0px 1px 1px 0px rgba(0, 0, 0, .4);
+    font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
+}
+
+#searching{
+	float: right;
+	height: 40px;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#383838), color-stop(100%,#777777)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #383838 0%,#777777 100%); /* Chrome10+,Safari5.1+ */
+	background: linear-gradient(to bottom,  #383838 0%,#777777 100%); /* W3C */
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	width: 200px;
+	margin-top: 12px;
+	margin-right: 15px;
+}
+
+#searching input{
+	border: none;
+	background: transparent;
+	font-size: 15px;
+	color: #ddd;
+	margin-left: 10px;
+	margin-top: 10px;
+	background-image: url('../img/icon-search.png');
+	background-size: 15px 15px;
+	background-position-y: 3px; 
+	background-repeat: no-repeat;
+	padding-left: 20px;
+}
+
+#searching fieldset{
+	border: none;
+}
+
+/**
+******************* Contenu ******************
+**/
+
+#content{
+	background-image: url('../img/bg-content.jpg');
+	background-color: #000;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding-top: 45px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background-size: 1024px 768px;
+}
